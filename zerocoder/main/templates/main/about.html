@@ -1,0 +1,20 @@
+{% extends 'main/layoute.html' %}
+{% load static %}
+
+{% block title %}
+    <title>About Us - Transport Co.</title>
+{% endblock %}
+
+{% block content %}
+    <h1>About Us</h1>
+    <p>Transport Co. has been a leader in transportation and logistics since 1990.</p>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>To provide exceptional transportation services that exceed our customers' expectations.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'main/img/team.jpg' %}" class="img-fluid" alt="Team Image">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'main/layoute.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Services - Transport Co.</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Our Services</h1>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'main/img/transport2.jpg' %}" class="card-img-top" alt="Service Image">
+                <div class="card-body">
+                    <h5 class="card-title">Freight Transport</h5>
+                    <p class="card-text">Efficient and reliable freight transport solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'main/img/Bus.jpg' %}" class="card-img-top" alt="Service Image">
+                <div class="card-body">
+                    <h5 class="card-title">Passenger Transport</h5>
+                    <p class="card-text">Safe and comfortable passenger transport services across the country.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{% static 'main/img/Logistics.jpg' %}" class="card-img-top" alt="Service Image">
+                <div class="card-body">
+                    <h5 class="card-title">Logistics Solutions</h5>
+                    <p class="card-text">Comprehensive logistics solutions to streamline your supply chain.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

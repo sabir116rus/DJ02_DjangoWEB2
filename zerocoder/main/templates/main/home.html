@@ -1,0 +1,22 @@
+{% extends 'main/layoute.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home - Transport Co.</title>
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Transport Co.</h1>
+        <p class="lead">Your reliable partner in transportation and logistics.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Our Fleet</h2>
+            <p>We offer a wide range of vehicles for all your transportation needs.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'main/img/transport1.jpg' %}" class="img-fluid" alt="Fleet Image">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    {% include 'main/nav.html' %}
+
+    <div class="container mt-5">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    {% include 'main/footer.html' %}
+</body>
+</html>
